@@ -1,0 +1,207 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px 0px;
+  padding: 0px 0px;
+}
+
+
+body, html {
+  height: 100vh;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.container {
+  width: 100%;
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  background-color: rgb(15, 61, 95);
+  height: 90px;
+  clear: both;
+}
+
+.logo {
+  margin: auto 20px;
+  height: 100%;
+  float: left;
+  width: 10%;
+}
+
+.logo img {
+  margin: auto auto;
+  /* img is not centered */
+}
+
+nav {
+  margin: auto 0;
+  height: 100%;
+  float: right;
+  width: 60%;
+}
+
+.menu {
+  height: 100%;
+  width: 20%;
+  background-color: rgb(15, 61, 95);
+  color: white;
+  font-weight: 300;
+  font-style: italic;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.menu:hover {
+  background-color: rgb(44, 84, 115);
+}
+
+.main_content {
+  position: relative;
+  top: 90px;
+  color: white;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+#Home {
+  background-color: rgb(15, 61, 95);
+}
+
+.slideshow-container {
+  height: 100%;
+  /* Include additional Properties needed for slideshow container..?
+     Otherwise there is no use because main_content height is also 100%
+     Probably want the bubbles, maybe arrows, maybe captions */
+}
+
+.slideshow-container img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Move title to header..?
+   Style alongside slideshow
+*/
+
+.slideshow-container  h1 {
+  width: 100%;
+  padding: 20px 0px;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:#FDC92A;
+  color: rgb(15, 61, 95);
+  font-variant: small-caps;
+  font-size: 38px;
+  font-weight: bold;
+  line-height: 0.8em;
+}
+
+.slideshow-container .small-title {
+  font-size: 22px;
+  font-weight: 550;
+}
+
+/* Rethink how this is made just in case? */
+
+.nav-menu {
+  position: absolute;
+  margin: 0 auto;
+  top: 75%;
+  z-index: 1;
+}
+
+.btn {
+  background-color: rgba(15, 61, 95, 0.9);
+  border-radius: 10px;
+  /* Style the rest of these buttons */
+}
+
+/* Lazy padding */
+
+.btn h1 {
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.col-3 {
+  margin: 0 50px;
+  display: inline-block;
+  height: 120px;
+  width: 25%;
+}
+
+#About {
+  background-color:rgb(250, 194, 79);
+}
+
+.main_content p {
+    /* All properties of paragraphis in the content slides */
+    font-family: s;
+    font-size: 20px;
+}
+
+#Officers {
+  background-color:rgb(18, 167, 218);
+  padding: 80px;
+}
+
+#Officers .row {
+  display: flex;
+}
+
+#Officers .col {
+  flex: 50%;
+  padding: 5px;
+}
+
+#Philanthropy {
+  background-color:rgb(250, 194, 79);
+}
+
+#Rush {
+  background-color:rgb(18, 167, 218);
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.Contact {
+  position: relative;
+  top: 90px;
+  background-color: rgb(15, 61, 95);
+  height: 100%;
+  color: white;
+  text-align: center;
+}
+
+/* Lazy padding I think */
+
+.Contact h1 {
+  padding-top: 120px;
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sigma Chi | Davis</title>
+    <link href="SC_Style.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="container">
+      <div class="logo">
+        <img src="./letters.png" height="50" width="89" alt="Sigma Chi Logo">
+      </div>
+      <nav>
+        <!--
+        The hover color rethink?
+        -->
+        <button class="menu" onclick="openTab('Home', this, 'rgb(44, 84, 115)')" id="defaultOpen">Home</button>
+        <button class="menu" onclick="openTab('About', this, 'rgb(250, 194, 79)')">About</button>
+        <button class="menu" onclick="openTab('Officers', this, 'rgb(18, 167, 218)')">Officers</button>
+        <button class="menu" onclick="openTab('Philanthropy', this, 'rgb(250, 194, 79)')">Philanthropy</button>
+        <button class="menu" onclick="openTab('Rush', this, 'rgb(18, 167, 218)')">Rush</button>
+      </nav>
+    </header>
+
+    <div class="main_content" id="Home">
+
+      <!--
+      Title and slideshow don't work together right now
+      Resizing screws everything up
+      -->
+
+      <div class="slideshow-container container">
+        <img class="fade Slideshow" src="./derby_18v2.JPG" height="800px" alt="Davis Arboretum">
+        <img class="fade Slideshow" src="./carving.JPG" height="800px" alt="Davis">
+        <img class="fade Slideshow" src="./back_bros.JPG" height="800px" alt="Brothers">
+        <h1>Davis Sigma Chi <br> <span class="small-title">Theta Omicron</span></h1>
+      </div>
+
+      <!--
+      Finish button functions
+      -->
+
+      <section class="container nav-menu">
+        <section class="col-3 btn">
+          <h1>Derby Days</h1>
+        </section><!--
+
+        --><section class="col-3 btn">
+          <h1>Some Other Link</h1>
+        </section><!--
+
+        --><section class="col-3 btn">
+          <h1>Sigma Chi Worldwide</h1>
+        </section>
+      </section>
+
+    </div>
+
+    <div class="main_content" id="About" >
+      <p>Long ass description paragraph Long ass description paragraph Long ass Description
+      Long ass description paragraph Long ass description paragraph Long ass description paragraph
+      Long ass description paragraph Long ass description paragraph Long ass description paragraph
+      Long ass description paragraph Long ass description paragraph Long ass description paragraph
+      Long ass description paragraph Long ass description paragraph Long ass description paragraph
+      Long ass description paragraph Long ass description paragraph Long ass description paragraph
+      Long ass description paragraph Long ass description paragraph Long ass description paragraph
+      Long ass description paragraph Long ass description paragraph Long ass description paragraph</p>
+    </div>
+    <div class="main_content" id="Officers">
+      <!--
+      FILL IN
+      -->
+      <div class="row">
+        <div class="col">
+          <img src="./letters.png" height="50" width="89" alt="Sigma Chi Logo">
+        </div>
+        <div class="col">
+          <img src="./letters.png" height="50" width="89" alt="Sigma Chi Logo">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <p1>Description number 1</p1>
+        </div>
+        <div class="col">
+          <p1>Description number 2</p1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img src="./letters.png" height="50" width="89" alt="Sigma Chi Logo">
+        </div>
+        <div class="col">
+          <img src="./letters.png" height="50" width="89" alt="Sigma Chi Logo">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <p1>Description number 3</p1>
+        </div>
+        <div class="col">
+          <p1>Description number 4</p1>
+        </div>
+      </div>
+    </div>
+    <div class="main_content" id="Philanthropy">
+      <!--
+      FILL IN
+      -->
+    </div>
+    <div class="main_content" id="Rush">
+      <!--
+      Have a few paragraphs about rush and a video..?
+      -->
+    </div>
+    <div class="Contact">
+      <!--
+      Make a grid container. Have location of the fraternity linked.
+      Do a form.
+      -->
+      <h1>Contact Us</h1>
+    </div>
+    <script>
+      var slideIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("Slideshow");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > x.length) {slideIndex = 1}
+        x[slideIndex-1].style.display = "block";
+        setTimeout(carousel, 3000);
+      }
+    </script>
+
+    <script>
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+      function openTab(tabName,elmnt,color) {
+        var i, main_content, menu;
+        main_content = document.getElementsByClassName("main_content");
+        for (i = 0; i < main_content.length; i++) {
+          main_content[i].style.display = "none";
+        }
+        menu = document.getElementsByClassName("menu");
+        for (i = 0; i < menu.length; i++) {
+          menu[i].style.backgroundColor = "";
+        }
+        document.getElementById(tabName).style.display = "block";
+
+        elmnt.style.backgroundColor = color;
+        // Try to make the text of the current element be black
+        main_content.style.backgroundColor = black;
+      }
+    </script>
+  </body>
+</html>
