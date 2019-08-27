@@ -11,7 +11,12 @@
 
 body, html {
   height: 100vh;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-family: "Lato", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 200;
 }
 
 .container {
@@ -24,6 +29,10 @@ header {
   background-color: rgb(15, 61, 95);
   height: 90px;
   clear: both;
+  min-width: 1200px;
+  -webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow:    0px 3px 5px rgba(0, 0, 0, 0.15);
+  box-shadow:         0px 3px 5px rgba(0, 0, 0, 0.15);
 }
 
 .logo {
@@ -53,30 +62,37 @@ nav {
 }
 
 .menu {
+  font-family: "Lato", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   height: 100%;
   width: 20%;
   background-color: rgb(15, 61, 95);
   color: white;
   font-weight: 300;
-  font-style: italic;
   float: left;
   border: none;
   outline: none;
   cursor: pointer;
   font-size: 20px;
+  text-shadow: 6px 3px 6px black;
 }
 
 .menu:hover {
   background-color: rgb(44, 84, 115);
 }
 
+/*
+----------------------------------------------------------------------
+THESE ARE THE CONTENT SECTIONs
+----------------------------------------------------------------------
+*/
+
 .main_content {
   position: relative;
-  top: 90px;
   color: white;
   text-align: center;
   height: 100%;
   width: 100%;
+  top: 90px;
 }
 
 #Home {
@@ -92,14 +108,13 @@ nav {
 
 .slideshow-container img {
   width: 100%;
-  height: 100%;
+  height: auto;
+  min-width: 1200px;
 }
 
-/* Move title to header..?
-   Style alongside slideshow
-*/
+/* The title needs some heavy styling */
 
-.slideshow-container  h1 {
+.slideshow-container  .large-title {
   width: 100%;
   padding: 20px 0px;
   background-color: rgba(255, 255, 255, 0.5);
@@ -117,53 +132,27 @@ nav {
 
 .slideshow-container .small-title {
   font-size: 22px;
-  font-weight: 550;
+  font-weight: 500;
 }
 
 /* Rethink how this is made just in case?
    Resize is messed up */
-
-.nav-menu {
-  position: absolute;
-  margin: 0 auto;
-  top: 75%;
-  z-index: 1;
-}
-
-.btn {
-  background-color: rgba(15, 61, 95, 0.9);
-  border-radius: 10px;
-  /* Style the rest of these buttons */
-}
-
-/* Lazy padding */
-
-.btn h1 {
-  margin: 0 auto;
-  padding-top: 40px;
-}
-
-.col-3 {
-  margin: 0 3%;
-  display: inline-block;
-  height: 120px;
-  width: 25%;
-}
 
 #About {
   background-color:rgb(250, 194, 79);
 }
 
 .main_content p {
-    /* All properties of paragraphis in the content slides */
-    font-family: ;
+    /* All properties of paragraphs in the content slides */
     font-size: 20px;
+    font-weight: 300;
 }
 
 #Officers {
   background-color:rgb(18, 167, 218);
   padding: 60px;
   height: 4750px;
+  min-width: 1200px;
 }
 
 #Officers .row {
@@ -210,16 +199,68 @@ nav {
   to {opacity: 1}
 }
 
+/*
+----------------------------------------------------------------------
+THIS IS THE NAV MENU SECTION
+----------------------------------------------------------------------
+*/
+
+.nav-menu {
+  position: relative;
+  margin: 0 auto;
+  height: 400px;
+  min-width: 1200px;
+  background-color: white;
+  color: white;
+}
+
+.btn {
+  background-color: rgba(15, 61, 95, 1);
+  /* Style the rest of these buttons */
+}
+
+/* This is mad messed up */
+.btn h3 {
+  position: relative;
+  top: 10px;
+  font-weight: 300;
+  font-size: 26px;
+  text-align: center;
+}
+
+.btn h5 {
+  position: relative;
+  top: 230px;
+  font-weight: 300;
+  font-size: 16px;
+  text-align: center;
+}
+
+.btn p {
+  position: relative;
+}
+
+.col-3 {
+  /* Fix how these columns look */
+  display: inline-block;
+  margin: 40px 3%;
+  height: 320px;
+  width: 25%;
+}
+
+/*
+----------------------------------------------------------------------
+THIS IS THE CONTACT SECTION
+----------------------------------------------------------------------
+*/
+
 .Contact {
   position: relative;
-  top: 90px;
   background-color: rgb(15, 61, 95);
   height: 100%;
   color: white;
   text-align: center;
 }
-
-/* Lazy padding I think */
 
 .Contact h1 {
   padding-top: 120px;
