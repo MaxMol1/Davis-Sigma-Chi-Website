@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "myFont";
+  src: url("./Lato/Lato-Regular.ttf");
+}
+
 *,
 *:before,
 *:after {
@@ -8,7 +13,6 @@
   padding: 0px 0px;
 }
 
-
 body, html {
   height: 100vh;
   font-family: "Lato", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -17,6 +21,22 @@ body, html {
 h1 {
   font-size: 50px;
   font-weight: 200;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 400;
+  font-variant: small-caps;
+}
+
+h5 {
+  font-size: 12px;
+}
+
+.link-button {
+  padding: 4px 4px;
+  border: 2px darkblue solid;
+  text-align: center;
 }
 
 .container {
@@ -93,6 +113,7 @@ THESE ARE THE CONTENT SECTIONs
   height: 100%;
   width: 100%;
   top: 90px;
+  min-width: 1200px;
 }
 
 #Home {
@@ -114,7 +135,7 @@ THESE ARE THE CONTENT SECTIONs
 
 /* The title needs some heavy styling */
 
-.slideshow-container  .large-title {
+.slideshow-container .large-title {
   width: 100%;
   padding: 20px 0px;
   background-color: rgba(255, 255, 255, 0.5);
@@ -134,9 +155,6 @@ THESE ARE THE CONTENT SECTIONs
   font-size: 22px;
   font-weight: 500;
 }
-
-/* Rethink how this is made just in case?
-   Resize is messed up */
 
 #About {
   background-color:rgb(250, 194, 79);
@@ -165,8 +183,11 @@ THESE ARE THE CONTENT SECTIONs
   padding-bottom: 60px;
 }
 
+/* Probably want to have descriptions and make it look better
+   Will is kind of messing things up */
+
 #Officers .col {
-  flex: 50%;
+  flex: 32%;
 }
 
 #Officers img {
@@ -190,13 +211,21 @@ THESE ARE THE CONTENT SECTIONs
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
 }
 
 /*
@@ -207,45 +236,53 @@ THIS IS THE NAV MENU SECTION
 
 .nav-menu {
   position: relative;
-  margin: 0 auto;
-  height: 400px;
+  height: 750px;
+  width: 100%;
   min-width: 1200px;
   background-color: white;
-  color: white;
+  color: black;
 }
 
-.btn {
-  background-color: rgba(15, 61, 95, 1);
-  /* Style the rest of these buttons */
-}
-
-/* This is mad messed up */
-.btn h3 {
-  position: relative;
-  top: 10px;
-  font-weight: 300;
-  font-size: 26px;
-  text-align: center;
-}
-
-.btn h5 {
-  position: relative;
-  top: 230px;
-  font-weight: 300;
-  font-size: 16px;
-  text-align: center;
-}
-
-.btn p {
-  position: relative;
-}
-
-.col-3 {
-  /* Fix how these columns look */
+.row-3 {
   display: inline-block;
-  margin: 40px 3%;
-  height: 320px;
-  width: 25%;
+  border-bottom: solid 1px darkgray;
+  height: 250px;
+  width: 100%;
+}
+
+.row-3 .label {
+  display: inline-block;
+  height: 250px;
+  width: 400px;
+}
+
+.row-3 .label h3 {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin: 15px 0px;
+}
+
+.row-3 .label img {
+  position: relative;
+  width: 250px;
+  height: auto;
+  margin: 30px 75px;
+  /* Divide the space left evenly */
+}
+
+/* Arrange these two in a div */
+
+.row-3 p {
+  margin: 40px 50px;
+  float: right;
+  width: 50%;
+}
+
+.row-3 h5 {
+  float: right;
+  clear: right;
+  width: 10%;
 }
 
 /*
