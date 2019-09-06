@@ -54,8 +54,6 @@ header {
   box-shadow:         0px 3px 5px rgba(0, 0, 0, 0.15);
 }
 
-/* Upon resize, menu-button text size becomes too big */
-
 .logo {
   margin: auto 20px;
   height: 100%;
@@ -124,6 +122,15 @@ THESE ARE THE CONTENT SECTIONs
   background-color: rgb(15, 61, 95);
 }
 
+.SlideshowStart {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  background: -webkit-linear-gradient(rgb(18, 167, 218), rgb(250, 194, 79));
+  background: -moz-linear-gradient(rgb(18, 167, 218), rgb(250, 194, 79));
+  background: linear-gradient(rgb(18, 167, 218), rgb(250, 194, 79));
+}
+
 .slideshow-container {
   height: 100%;
   /* Include additional Properties needed for slideshow container..?
@@ -136,20 +143,21 @@ THESE ARE THE CONTENT SECTIONs
   height: auto;
 }
 
-/* The title needs some heavy styling */
-
 .slideshow-container .large-title {
   width: 100%;
   padding: 20px 0px;
-  background-color: rgba(255, 255, 255, 0.5);
+  /*background-color: rgba(255, 255, 255, 0.5);*/
   position: absolute;
   top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
+
   color:#FDC92A;
   color: rgb(15, 61, 95);
+  color: white;
+
   font-variant: small-caps;
-  font-size: 38px;
+  font-size: 45px;
   font-weight: bold;
   line-height: 0.8em;
 }
@@ -161,6 +169,9 @@ THESE ARE THE CONTENT SECTIONs
 
 #About {
   background-color:rgb(250, 194, 79);
+  background: -webkit-linear-gradient(to right bottom, rgb(250, 194, 79), rgb(255, 240, 150));
+  background: -moz-linear-gradient(to right bottom, rgb(250, 194, 79), rgb(255, 240, 150));
+  background: linear-gradient(to right bottom, rgb(250, 194, 79), rgb(255, 240, 150));
 }
 
 .main_content p {
@@ -170,10 +181,12 @@ THESE ARE THE CONTENT SECTIONs
 }
 
 #Officers {
-  background-color:rgb(18, 167, 218);
-  background-color: white;
+  background-color: rgb(18, 167, 218);
+  background: -webkit-linear-gradient(to right bottom, rgb(18, 167, 218), white);
+  background: -moz-linear-gradient(to right bottom, rgb(18, 167, 218), white);
+  background: linear-gradient(to right bottom, rgb(18, 167, 218), white);
   padding: 60px;
-  height: 4750px;
+  height: 2800px;
   min-width: 1100px;
 }
 
@@ -186,10 +199,12 @@ THESE ARE THE CONTENT SECTIONs
   padding-top: 10px;
   padding-bottom: 60px;
   color: black;
+  font-size: 28px;
 }
 
-/* Probably want to have descriptions and make it look better
-   Will is kind of messing things up */
+#Officers .row .off-title {
+  font-size: 18px;
+}
 
 #Officers .col {
   flex: 32%;
@@ -202,22 +217,28 @@ THESE ARE THE CONTENT SECTIONs
 
 #Philanthropy {
   background-color:rgb(250, 194, 79);
+  background: -webkit-linear-gradient(to right bottom, rgb(250, 194, 79), rgb(255, 240, 150));
+  background: -moz-linear-gradient(to right bottom, rgb(250, 194, 79), rgb(255, 240, 150));
+  background: linear-gradient(to right bottom, rgb(250, 194, 79), rgb(255, 240, 150));
 }
 
 #Rush {
   background-color:rgb(18, 167, 218);
+  background: -webkit-linear-gradient(to right bottom, rgb(18, 167, 218), white);
+  background: -moz-linear-gradient(to right bottom, rgb(18, 167, 218), white);
+  background: linear-gradient(to right bottom, rgb(18, 167, 218), white);
 }
 
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 2.0s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 2.0s;
 }
 
 @-webkit-keyframes fade {
   from {
-    opacity: .4
+    opacity: 0.1
   }
   to {
     opacity: 1
@@ -226,7 +247,7 @@ THESE ARE THE CONTENT SECTIONs
 
 @keyframes fade {
   from {
-    opacity: .4
+    opacity: 0.1
   }
   to {
     opacity: 1
@@ -304,12 +325,44 @@ THIS IS THE CONTACT SECTION
 .Contact {
   position: relative;
   background-color: rgb(15, 61, 95);
+  background: -webkit-linear-gradient(to right bottom, rgb(0, 0, 5), rgb(15, 61, 95) 90%);
+  background: -moz-linear-gradient(to right bottom, rgb(0, 0, 5), rgb(15, 61, 95) 90%);
+  background: linear-gradient(to right bottom, rgb(0, 0, 5), rgb(15, 61, 95) 90%);
   height: 100%;
   color: white;
   text-align: center;
   min-width: 1100px;
+  min-height: 600px;
+}
+
+.contact-container {
+  display: inline-block;
+  width: 40%;
+  float: left;
+  margin-top: 4%;
 }
 
 .Contact h1 {
   padding-top: 120px;
+  font-weight: 300;
+}
+
+.Contact h3 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 200;
+  margin-bottom: 15px;
+}
+
+.Contact h5 {
+  font-size: 30px;
+  font-weight: 200;
+  margin-bottom: 60px;
+}
+
+.Contact iframe {
+  display: inline-block;
+  width: 40%;
+  float: right;
+  margin: 4% 8% 0% 0%;
 }

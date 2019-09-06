@@ -4,9 +4,6 @@
     <meta charset="utf-8">
     <title>Sigma Chi | Davis</title>
     <link href="SC_Style.css" type="text/css" rel="stylesheet">
-  <!--
-  @import is not working
-  -->
   </head>
   <body>
     <header class="container">
@@ -14,9 +11,6 @@
         <img src="./letters.png" height="50" width="89" alt="Sigma Chi Logo">
       </div>
       <nav>
-        <!--
-        The hover color rethink?
-        -->
         <button class="menu" onclick="openTab('Home', this, 'rgb(44, 84, 115)')" id="defaultOpen">Home</button>
         <button class="menu" onclick="openTab('About', this, 'rgb(44, 84, 115)')">About</button>
         <button class="menu" onclick="openTab('Officers', this, 'rgb(44, 84, 115)')">Officers</button>
@@ -24,19 +18,12 @@
         <button class="menu" onclick="openTab('Rush', this, 'rgb(44, 84, 115)')">Rush</button>
       </nav>
     </header>
-
     <div class="main_content" id="Home">
-
-      <!--
-      Change title
-      Fix nav-bar margins
-      minwidth needs to be 100% but static unit wise
-      -->
-
       <div class="slideshow-container container">
-        <img class="fade Slideshow" src="./back3.JPG" height="800px" alt="Davis Arboretum">
-        <img class="fade Slideshow" src="./back4.JPG" height="800px" alt="Davis">
-        <img class="fade Slideshow" src="./back5.JPG" height="800px" alt="Brothers">
+        <div class="fade SlideshowStart"></div>
+        <img class="fade Slideshow" src="./Backgrounds/background3.JPG" height="800px" alt="Davis Arboretum">
+        <img class="fade Slideshow" src="./Backgrounds/background1.JPG" height="800px" alt="Davis">
+        <img class="fade Slideshow" src="./Backgrounds/background2.JPG" height="800px" alt="Brothers">
         <div class="large-title">Davis Sigma Chi <br> <span class="small-title">Theta Omicron</span></div>
       </div>
 
@@ -54,102 +41,101 @@
       paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph
       paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph</p>
     </div>
-
     <div class="main_content" id="Officers">
       <div class="row">
         <div class="col">
-          <img src="./Officers/Julian.JPG" height="50%" width="50%" alt="Sigma Chi Logo">
+          <img src="./Officers/Joe.JPG" height="50%" width="50%" alt="Sigma Chi Logo">
         </div>
         <div class="col">
-          <img src="./Officers/Niko.JPG" height="50%" width="50%" alt="Sigma Chi Logo">
+          <img src="./Officers/Andre.JPG" height="50%" width="50%" alt="Sigma Chi Logo">
         </div>
         <div class="col">
-          <img src="./Officers/Shmick.JPG" height="50%" width="50%" alt="Sigma Chi Logo">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <h3>Julian Burns <br> Consul</h3>
-        </div>
-        <div class="col">
-          <h3>Niko Domingo <br> Pro Consul</h3>
-        </div>
-        <div class="col">
-          <h3>Nick Smith <br> Derby Days Coordinator</h3>
+          <img src="./Officers/Cam.JPG" height="50%" width="50%" alt="Sigma Chi Logo">
         </div>
       </div>
       <div class="row">
         <div class="col">
-          <img src="./Officers/Gavin.JPG" height="50%" width="50%" alt="Sigma Chi Logo">
+          <h3>Joe Kull <br> <span class="off-title">Consul</span></h3>
+        </div>
+        <div class="col">
+          <h3>Andre Spinoglio <br> <span class="off-title">Pro Consul</span></h3>
+        </div>
+        <div class="col">
+          <h3>Cameron Owoc <br> <span class="off-title">Annotator</span></h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img src="./Officers/kushner.jpg" height="50%" width="50%" alt="Sigma Chi Logo">
         </div>
         <div class="col">
           <img src="./Officers/Luca.JPG" height="50%" width="50%" alt="Sigma Chi Logo">
         </div>
         <div class="col">
-          <img src="./Officers/Joe.JPG" height="50%" width="50%" alt="Sigma Chi Logo">
+          <img src="./Officers/Tom.JPG" height="50%" width="50%" alt="Sigma Chi Logo">
         </div>
       </div>
       <div class="row">
         <div class="col">
-          <h3>Gavin Weitzenburg <br> Historian</h3>
+          <h3>Nathan Kushner <br> <span class="off-title">Historian, Derby Days Coordinator</span></h3>
         </div>
         <div class="col">
-          <h3>Luca Cerny <br> Tribune</h3>
+          <h3>IDK WHO IT IS <br> <span class="off-title">Tribune</span></h3>
         </div>
         <div class="col">
-          <h3>Joe Kull <br> Recruitment Chairman</h3>
+          <h3>Tom Robey <br> <span class="off-title">Recruitment Chairman</span></h3>
         </div>
       </div>
     <div class="row">
       <div class="col">
-        <img src="./Officers/Andreas.JPG" height="50%" width="50%" alt="Sigma Chi Logo">
+        <img src="./Officers/oliver.jpg" height="50%" width="50%" alt="Sigma Chi Logo">
       </div>
       <div class="col">
-        <img src="./Officers/Dane.JPG" height="50%" width="50%" alt="Sigma Chi Logo">
+        <img src="./Officers/prentice.jpg" height="50%" width="50%" alt="Sigma Chi Logo">
       </div>
       <div class="col">
-        <img src="./Officers/Tom.JPG" height="50%" width="50%" alt="Sigma Chi Logo">
+        <img src="./Officers/zach.jpg" height="50%" width="50%" alt="Sigma Chi Logo">
       </div>
     </div>
     <div class="row">
       <div class="col">
-        <h3>Andreas Godderis <br> Quastor</h3>
+        <h3>Oliver Hannaoui <br> <span class="off-title">Quaster</span></h3>
       </div>
       <div class="col">
-        <h3>Dane Knotts <br> Magister</h3>
+        <h3>Justin Prentice <br> <span class="off-title">Magister</span></h3>
       </div>
       <div class="col">
-        <h3>Tom Robey <br> Risk Manager</h3>
+        <h3>Zach Wagonis <br> <span class="off-title">Risk Manager</span></h3>
       </div>
     </div>
   <div class="row">
     <div class="col">
-      <img src="./Officers/Sourena.JPG" height="50%" width="50%" alt="Sigma Chi Logo">
+      <img src="./Officers/will.JPG" height="50%" width="50%" alt="Sigma Chi Logo">
     </div>
     <div class="col">
-      <img src="./Officers/Andre.JPG"alt="Sigma Chi Logo">
+      <img src="./Officers/tenorio.jpg"alt="Sigma Chi Logo">
     </div>
     <div class="col">
-      <img src="./Officers/Marcus.JPG"alt="Sigma Chi Logo">
+      <img src="./Officers/scriv.jpg"alt="Sigma Chi Logo">
     </div>
   </div>
   <div class="row">
     <div class="col">
-      <h3>Sourena Shir <br> Chapter Editor</h3>
+      <h3>William Khouri <br> <span class="off-title">Chapter Editor</span></h3>
     </div>
     <div class="col">
-      <h3>Andre Spinoglio <br> Kustos</h3>
+      <h3>Alex Tenorio <br> <span class="off-title">Kustos</span></h3>
     </div>
     <div class="col">
-      <h3>Marcus Narodny <br> Social Chairman</h3>
+      <h3>Hunter Scriven <br> <span class="off-title">Social Chairman</span></h3>
     </div>
   </div>
   <div class="row">
     <div class="col">
-      <img src="./Officers/Adam.JPG"alt="Sigma Chi Logo">
+      <img src="./Officers/Grapist.JPG"alt="Sigma Chi Logo">
     </div>
     <div class="col">
-      <img src="./Officers/David.JPG"alt="Sigma Chi Logo">
+      <img src="./Officers/Tobi.JPG"alt="Sigma Chi Logo">
     </div>
     <div class="col">
       <img src="./Officers/Grapist.JPG"alt="Sigma Chi Logo">
@@ -157,45 +143,57 @@
   </div>
   <div class="row">
     <div class="col">
-      <h3>Adam Armienta <br> Brotherhood Chairman</h3>
+      <h3>Matthew Grabert <br> <span class="off-title">Brotherhood Chairman</span></h3>
     </div>
     <div class="col">
-      <h3>David Bronstein <br> Scholarship Chair</h3>
+      <h3>Tobi Ayo-Ajibola <br> <span class="off-title">Scholarship Chair, Derby Days Coordinator</span></h3>
     </div>
     <div class="col">
-      <h3>Matthew Grabert <br> Sustainability Chair</h3>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col">
-      <img src="./Officers/Tobi.JPG"alt="Sigma Chi Logo">
-    </div>
-    <div class="col">
-      <img src="./Officers/Campos.JPG"alt="Sigma Chi Logo">
-    </div>
-    <div class="col">
-      <img src="./Officers/Cam.JPG"alt="Sigma Chi Logo">
+      <h3>IDK <br> <span class="off-title">Sustainability Chair</span></h3>
     </div>
   </div>
   <div class="row">
     <div class="col">
-      <h3>Tobi Ayo-Ajibola <br> Philanthropy Chair</h3>
+      <img src="./Officers/himbo.jpg"alt="Sigma Chi Logo">
     </div>
     <div class="col">
-      <h3>Andrew Campos <br> Athletic Coordinator</h3>
+      <img src="./Officers/mahan.jpg"alt="Sigma Chi Logo">
     </div>
     <div class="col">
-      <h3>Cameron Owoc <br> House Manager</h3>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col">
-      <img src="./Officers/Will.JPG"alt="Sigma Chi Logo">
+      <img src="./Officers/lucas.jpg"alt="Sigma Chi Logo">
     </div>
   </div>
   <div class="row">
     <div class="col">
-      <h3>William Khouri <br> Steward</h3>
+      <h3>Muhimbo Karangizi <br> <span class="off-title">Philanthropy Chair</span></h3>
+    </div>
+    <div class="col">
+      <h3>Mahan Carduny <br> <span class="off-title">Athletic Coordinator</span></h3>
+    </div>
+    <div class="col">
+      <h3>Lucas Fong <br> <span class="off-title">House Manager</span></h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <img src="./Officers/cody.jpg"alt="Sigma Chi Logo">
+    </div>
+    <div class="col">
+      <img src="./Officers/jamie.jpg"alt="Sigma Chi Logo">
+    </div>
+    <div class="col">
+      <img src="./Officers/beau.jpg"alt="Sigma Chi Logo">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <h3>Cody Bynes <br> <span class="off-title">Steward</span></h3>
+    </div>
+    <div class="col">
+      <h3>Jamie Cliff <br> <span class="off-title">Sweetheart</span></h3>
+    </div>
+    <div class="col">
+      <h3>Beau Zuercher <br> <span class="off-title">Sorority Relations Chairman</span></h3>
     </div>
   </div>
 </div>
@@ -212,9 +210,6 @@
       Rush video would be flame
       -->
     </div>
-    <!--
-    The nav-menu isn't smartly arranged but looks good for now
-    -->
     <section class="nav-menu">
       <section class="row-3">
         <div class="label">
@@ -265,15 +260,32 @@
       </section>
     </section>
     <section class="Contact">
-      <!--
-      Have the location bright and clear
-      -->
       <h1>Contact Us</h1>
-
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3120.5358748719473!2d-121.76344228513447!3d38.54446567527591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808529aa4ee76c5b%3A0x4421b3d1327e9072!2s400%20Parkway%20Cir%2C%20Davis%2C%20CA%2095616!5e0!3m2!1sen!2sus!4v1567377044118!5m2!1sen!2sus"
+      width="500" height="375" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      <div class="contact-container">
+        <h3>Email:</h3>
+        <h5>htrobey@ucdavis.edu</h5>
+        <h3>Phone:</h3>
+        <h5>650-353-8048</h5>
+      </div>
     </section>
+
+    <!--
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Javascript
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    -->
 
     <script>
       var slideIndex = 0;
+      setTimeout(del, 3000);
+      function del() {
+        var temp = document.getElementsByClassName("SlideshowStart");
+        for (i = 0; i < temp.length; i++) {
+          temp[i].style.display = "none";
+        }
+      }
       carousel();
       function carousel() {
         var i;
@@ -290,24 +302,36 @@
 
     <script>
       document.getElementById("defaultOpen").click();
+      var curOpenTab;
       function openTab(tabName,elmnt,color) {
-        var i, main_content, menu;
+        var i, main_content, menu, nav_menu;
         main_content = document.getElementsByClassName("main_content");
         for (i = 0; i < main_content.length; i++) {
           main_content[i].style.display = "none";
         }
+
+        nav_menu = document.getElementsByClassName("nav-menu");
+        if (tabName == "Home") {
+          for (i = 0; i < nav_menu.length; i++) {
+            nav_menu[i].style.display = "block";
+          }
+        } else {
+          for (i = 0; i < nav_menu.length; i++) {
+            nav_menu[i].style.display = "none";
+          }
+        }
+
         menu = document.getElementsByClassName("menu");
         for (i = 0; i < menu.length; i++) {
           menu[i].style.backgroundColor = "";
         }
         document.getElementById(tabName).style.display = "block";
         elmnt.style.backgroundColor = color;
-        /* Animate
-           If you click on what is open do not scroll
-         */
-        scroll(0, 0);
+        if (curOpenTab !== tabName) {
+          scroll(0, 0);
+        }
+        curOpenTab = tabName;
       }
     </script>
-
   </body>
 </html>
