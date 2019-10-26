@@ -1,368 +1,263 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,500,600');
 
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+  color: #222;
+}
+
+.navbar {
+  padding: 0.8em;
+}
+
+.navbar:hover {
+  color: #222;
+}
+
+.bg-dark {
+  background-color: blue;
+}
+
+.navbar-nav li {
+  font-size: 16px;
+  padding: 0em 0.8em;
+}
+
+#main-carousel {
   margin: 0px 0px;
   padding: 0px 0px;
 }
 
-body, html {
-  height: 100vh;
-  font-family: "Lato", sans-serif;
+#main-carousel img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+/*
+#main-carousel .carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-h1 {
-  font-size: 50px;
+#main-carousel .carousel-caption h1 {
+  text-transform: uppercase;
+  font-size: 80px;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-shadow: 3px 2px 10px black;
+}
+
+#main-carousel .carousel-caption h3 {
+  text-transform: small-caps;
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: .03em;
+  text-shadow: 3px 2px 10px black;
+}
+*/
+
+figure {
+  position: relative;
+  width: 100%;
+  height: 70%;
+  margin: 0!important;
+}
+
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Definitely Tweak with this */
+#fixed {
+  background-image: url('images/parallaxes/parallax.JPG');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+
+/* This is just not efficient */
+
+#fixed2 {
+  background-image: url('images/parallaxes/current-events-side.jpeg');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+
+.display-4 {
+  padding: 30px 0px;
+}
+
+.contact-us {
+  background: linear-gradient(rgb(11, 60, 96), black);
+  color: white;
+  min-height: 100%;
+}
+
+.contact-us h3 {
   font-weight: 200;
+  font-size: 42px;
+}
+
+.contact-us h4 {
+  font-weight: 200;
+  font-size: 32px;
+}
+
+.padding-bottom {
+  padding-bottom: 50px;
+}
+
+.padding-top {
+  padding-top: 50px;
+}
+
+.padding {
+  padding: 30px 0px;
+}
+
+.side-padding {
+  padding: 0px 40px;
+}
+
+.fixed-wrap {
+
 }
 
 h3 {
-  font-size: 24px;
-  font-weight: 400;
-  font-variant: small-caps;
+  padding-bottom: 25px;
 }
 
-h5 {
-  font-size: 12px;
+.section-cont {
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
-/* Make sure to use */
-
-.link-button {
-  padding: 4px 4px;
-  border: 2px darkblue solid;
-  text-align: center;
-}
-
-.container {
+#history {
+  margin: 0px 0px;
+  height: 94%;
   width: 100%;
+  background-image: url(images/about/sigmachi-flag.jpg);
+  filter: brightness(85%);
 }
 
-header {
-  position: fixed;
-  z-index: 2;
-  background-color: rgb(15, 61, 95);
-  height: 90px;
-  clear: both;
-  min-width: 750px;
-  -webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow:    0px 3px 5px rgba(0, 0, 0, 0.15);
-  box-shadow:         0px 3px 5px rgba(0, 0, 0, 0.15);
-}
-
-.logo {
-  margin: auto 20px;
-  height: 100%;
-  float: left;
-  width: 10%;
-  position: relative;
-}
-
-.logo img {
-  position: absolute;
-  right: 0;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto auto;
-  max-height: 100%;
-  max-width: 100%;
-  min-width: 90px
-}
-
-nav {
-  margin: auto 0;
-  height: 100%;
-  float: right;
-  width: 60%;
-  min-width: 600px;
-}
-
-.menu {
-  font-family: "Lato", sans-serif;
-  height: 100%;
-  width: 20%;
-  background-color: rgb(15, 61, 95);
-  color: white;
-  font-weight: 300;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  font-size: 20px;
-  text-shadow: 6px 3px 6px black;
-}
-
-.menu:hover {
-  background-color: rgb(44, 84, 115);
-  font-size: 22px;
-}
-
-/*
-----------------------------------------------------------------------
-THESE ARE THE CONTENT SECTIONs
-----------------------------------------------------------------------
-*/
-
-.main_content {
-  position: relative;
-  color: white;
-  text-align: center;
-  height: 100%;
-  width: 100%;
-  top: 90px;
-  min-width: 1100px;
-}
-
-#Home {
-  background-color: rgb(15, 61, 95);
-}
-
-.SlideshowStart {
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  background: -webkit-linear-gradient(rgb(18, 167, 218), rgb(250, 194, 79));
-  background: -moz-linear-gradient(rgb(18, 167, 218), rgb(250, 194, 79));
-  background: linear-gradient(rgb(18, 167, 218), rgb(250, 194, 79));
-}
-
-.slideshow-container {
-  height: 100%;
-  /* Include additional Properties needed for slideshow container..?
-     Otherwise there is no use because main_content height is also 100%
-     Probably want the bubbles, maybe arrows, maybe captions */
-}
-
-.slideshow-container img {
-  width: 100%;
-  height: auto;
-}
-
-.slideshow-container .large-title {
-  width: 100%;
-  padding: 20px 0px;
-  /*background-color: rgba(255, 255, 255, 0.5);*/
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  color:#FDC92A;
-  color: rgb(15, 61, 95);
-  color: white;
-
-  font-variant: small-caps;
-  font-size: 45px;
-  font-weight: bold;
-  line-height: 0.8em;
-}
-
-.slideshow-container .small-title {
-  font-size: 22px;
-  font-weight: 500;
-}
-
-#About {
-  background-color:rgb(250, 194, 79);
-  background: -webkit-linear-gradient(to right bottom, rgb(250, 194, 79), rgb(255, 240, 150));
-  background: -moz-linear-gradient(to right bottom, rgb(250, 194, 79), rgb(255, 240, 150));
-  background: linear-gradient(to right bottom, rgb(250, 194, 79), rgb(255, 240, 150));
-}
-
-.main_content p {
-    /* All properties of paragraphs in the content slides */
-    font-size: 20px;
-    font-weight: 300;
-}
-
-#Officers {
-  background-color: rgb(18, 167, 218);
-  background: -webkit-linear-gradient(to right bottom, rgb(18, 167, 218), white);
-  background: -moz-linear-gradient(to right bottom, rgb(18, 167, 218), white);
-  background: linear-gradient(to right bottom, rgb(18, 167, 218), white);
-  padding: 60px;
-  height: 2800px;
-  min-width: 1100px;
-}
-
-#Officers .row {
-  display: flex;
-  width: 100%;
-}
-
-#Officers .row h3 {
-  padding-top: 10px;
-  padding-bottom: 60px;
+#history h1 {
   color: black;
-  font-size: 28px;
+  font-weight: 300;
+  padding-bottom: 10%;
+  padding-right: 50px;
+  width: 100%;
+  text-align: right;
 }
 
-#Officers .row .off-title {
+#history p {
+  padding: 30px 10% 0px 10%;
+  font-size: 22px;
+}
+
+#history footer {
   font-size: 18px;
+  text-align: right;
+  padding-right: 150px;
 }
 
-#Officers .col {
-  flex: 32%;
+#our-chapter h1 {
+  margin: 0px 0px;
+  padding: 0px 0px 30px 0px;
 }
 
-#Officers img {
-  width: 40%;
-  height: auto;
+#brotherhood img {
+
 }
 
-#Philanthropy {
-  background-color:rgb(250, 194, 79);
-  background: -webkit-linear-gradient(to right bottom, rgb(250, 194, 79), rgb(255, 240, 150));
-  background: -moz-linear-gradient(to right bottom, rgb(250, 194, 79), rgb(255, 240, 150));
-  background: linear-gradient(to right bottom, rgb(250, 194, 79), rgb(255, 240, 150));
-}
-
-#Rush {
-  background-color:rgb(18, 167, 218);
-  background: -webkit-linear-gradient(to right bottom, rgb(18, 167, 218), white);
-  background: -moz-linear-gradient(to right bottom, rgb(18, 167, 218), white);
-  background: linear-gradient(to right bottom, rgb(18, 167, 218), white);
-}
-
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 2.0s;
-  animation-name: fade;
-  animation-duration: 2.0s;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.1
-  }
-  to {
-    opacity: 1
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.1
-  }
-  to {
-    opacity: 1
-  }
-}
-
-/*
-----------------------------------------------------------------------
-THIS IS THE NAV MENU SECTION
-----------------------------------------------------------------------
-*/
-
-.nav-menu {
-  position: relative;
-  height: 750px;
+/* Fix the resize */
+#brotherhood h1 {
   width: 100%;
-  min-width: 1100px;
-  background-color: white;
+  text-align: center;
   color: black;
 }
 
-.row-3 {
+#brotherhood p {
+  padding: 5% 10%;
+}
+
+#closer {
   display: inline-block;
-  border-bottom: solid 1px darkgray;
-  height: 250px;
+  height: 170px;
   width: 100%;
+  background-color: #333;
+  padding: 0px 0px;
+  margin: 0px 0px;
 }
 
-.row-3 .content {
-  display: inline-block;
-  width: 60%;
-  height: 250px;
-  float: right;
+/*---Media Queries --*/
+@media (max-width: 992px) {
+
+  }
+@media (max-width: 768px) {
+
+}
+@media (max-width: 576px) {
+
 }
 
-.row-3 .content p {
-  padding: 40px 50px 0px 0px;
-  /* Other paragraph properties */
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
 }
 
-.row-3 .content h5 {
-  margin: auto auto;
-  width: 15%;
-  margin-top: 2em;
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
 }
 
-.row-3 .label {
-  display: inline-block;
-  float: left;
-  height: 250px;
-  width: 35%;
-}
 
-.row-3 .label h3 {
-  position: relative;
-  width: 100%;
-  text-align: center;
-  margin: 15px 0px;
-}
 
-.row-3 .label img {
-  position: relative;
-  width: 250px;
-  height: auto;
-  margin: 30px 75px;
-  /* Divide the space left evenly */
-}
+
 
 /*
-----------------------------------------------------------------------
-THIS IS THE CONTACT SECTION
-----------------------------------------------------------------------
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
 */
-
-.Contact {
-  position: relative;
-  background-color: rgb(15, 61, 95);
-  background: -webkit-linear-gradient(to right bottom, rgb(0, 0, 5), rgb(15, 61, 95) 90%);
-  background: -moz-linear-gradient(to right bottom, rgb(0, 0, 5), rgb(15, 61, 95) 90%);
-  background: linear-gradient(to right bottom, rgb(0, 0, 5), rgb(15, 61, 95) 90%);
-  height: 100%;
-  color: white;
-  text-align: center;
-  min-width: 1100px;
-  min-height: 600px;
-}
-
-.contact-container {
-  display: inline-block;
-  width: 40%;
-  float: left;
-  margin-top: 4%;
-}
-
-.Contact h1 {
-  padding-top: 120px;
-  font-weight: 300;
-}
-
-.Contact h3 {
-  text-align: center;
-  font-size: 40px;
-  font-weight: 200;
-  margin-bottom: 15px;
-}
-
-.Contact h5 {
-  font-size: 30px;
-  font-weight: 200;
-  margin-bottom: 60px;
-}
-
-.Contact iframe {
-  display: inline-block;
-  width: 40%;
-  float: right;
-  margin: 4% 8% 0% 0%;
-}
