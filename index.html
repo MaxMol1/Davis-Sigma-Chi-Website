@@ -2,336 +2,187 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sigma Chi | Davis</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+
+
+
     <link href="SC_Style.css" type="text/css" rel="stylesheet">
   </head>
   <body>
-    <header class="container">
-      <div class="logo">
-        <img src="./letters.png" height="50" width="89" alt="Sigma Chi Logo">
-      </div>
-      <nav>
-        <button class="menu" onclick="openTab('Home', this, 'rgb(44, 84, 115)')" id="defaultOpen">Home</button>
-        <button class="menu" onclick="openTab('About', this, 'rgb(44, 84, 115)')">About</button>
-        <button class="menu" onclick="openTab('Officers', this, 'rgb(44, 84, 115)')">Officers</button>
-        <button class="menu" onclick="openTab('Philanthropy', this, 'rgb(44, 84, 115)')">Philanthropy</button>
-        <button class="menu" onclick="openTab('Rush', this, 'rgb(44, 84, 115)')">Rush</button>
-      </nav>
-    </header>
-    <div class="main_content" id="Home">
-      <div class="slideshow-container container">
-        <div class="fade SlideshowStart"></div>
-        <img class="fade Slideshow" src="./Backgrounds/background3.JPG" height="800px" alt="Davis Arboretum">
-        <img class="fade Slideshow" src="./Backgrounds/background1.JPG" height="800px" alt="Davis">
-        <img class="fade Slideshow" src="./Backgrounds/background2.JPG" height="800px" alt="Brothers">
-        <div class="large-title">Davis Sigma Chi <br> <span class="small-title">Theta Omicron</span></div>
-      </div>
+    <!-- Navigation -->
 
-    </div>
     <!--
-    Finish about section
+    Scroll down for ajax method
     -->
-    <div class="main_content" id="About" >
-      <p>paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph
-      paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph
-      paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph
-      paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph
-      paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph
-      paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph
-      paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph
-      paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph</p>
-    </div>
-    <div class="main_content" id="Officers">
-      <div class="row">
-        <div class="col">
-          <img src="./Officers/Joe.JPG" height="50%" width="50%" alt="Sigma Chi Logo">
-        </div>
-        <div class="col">
-          <img src="./Officers/Andre.JPG" height="50%" width="50%" alt="Sigma Chi Logo">
-        </div>
-        <div class="col">
-          <img src="./Officers/Cam.JPG" height="50%" width="50%" alt="Sigma Chi Logo">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <h3>Joe Kull <br> <span class="off-title">Consul</span></h3>
-        </div>
-        <div class="col">
-          <h3>Andre Spinoglio <br> <span class="off-title">Pro Consul</span></h3>
-        </div>
-        <div class="col">
-          <h3>Cameron Owoc <br> <span class="off-title">Annotator</span></h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <img src="./Officers/kushner.jpg" height="50%" width="50%" alt="Sigma Chi Logo">
-        </div>
-        <div class="col">
-          <img src="./Officers/Luca.JPG" height="50%" width="50%" alt="Sigma Chi Logo">
-        </div>
-        <div class="col">
-          <img src="./Officers/Tom.JPG" height="50%" width="50%" alt="Sigma Chi Logo">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <h3>Nathan Kushner <br> <span class="off-title">Historian, Derby Days Coordinator</span></h3>
-        </div>
-        <div class="col">
-          <h3>IDK WHO IT IS <br> <span class="off-title">Tribune</span></h3>
-        </div>
-        <div class="col">
-          <h3>Tom Robey <br> <span class="off-title">Recruitment Chairman</span></h3>
-        </div>
-      </div>
-    <div class="row">
-      <div class="col">
-        <img src="./Officers/oliver.jpg" height="50%" width="50%" alt="Sigma Chi Logo">
-      </div>
-      <div class="col">
-        <img src="./Officers/prentice.jpg" height="50%" width="50%" alt="Sigma Chi Logo">
-      </div>
-      <div class="col">
-        <img src="./Officers/zach.jpg" height="50%" width="50%" alt="Sigma Chi Logo">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <h3>Oliver Hannaoui <br> <span class="off-title">Quaster</span></h3>
-      </div>
-      <div class="col">
-        <h3>Justin Prentice <br> <span class="off-title">Magister</span></h3>
-      </div>
-      <div class="col">
-        <h3>Zach Wagonis <br> <span class="off-title">Risk Manager</span></h3>
-      </div>
-    </div>
-  <div class="row">
-    <div class="col">
-      <img src="./Officers/will.JPG" height="50%" width="50%" alt="Sigma Chi Logo">
-    </div>
-    <div class="col">
-      <img src="./Officers/tenorio.jpg"alt="Sigma Chi Logo">
-    </div>
-    <div class="col">
-      <img src="./Officers/scriv.jpg"alt="Sigma Chi Logo">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col">
-      <h3>William Khouri <br> <span class="off-title">Chapter Editor</span></h3>
-    </div>
-    <div class="col">
-      <h3>Alex Tenorio <br> <span class="off-title">Kustos</span></h3>
-    </div>
-    <div class="col">
-      <h3>Hunter Scriven <br> <span class="off-title">Social Chairman</span></h3>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col">
-      <img src="./Officers/Grapist.JPG"alt="Sigma Chi Logo">
-    </div>
-    <div class="col">
-      <img src="./Officers/Tobi.JPG"alt="Sigma Chi Logo">
-    </div>
-    <div class="col">
-      <img src="./Officers/Grapist.JPG"alt="Sigma Chi Logo">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col">
-      <h3>Matthew Grabert <br> <span class="off-title">Brotherhood Chairman</span></h3>
-    </div>
-    <div class="col">
-      <h3>Tobi Ayo-Ajibola <br> <span class="off-title">Scholarship Chair, Derby Days Coordinator</span></h3>
-    </div>
-    <div class="col">
-      <h3>IDK <br> <span class="off-title">Sustainability Chair</span></h3>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col">
-      <img src="./Officers/himbo.jpg"alt="Sigma Chi Logo">
-    </div>
-    <div class="col">
-      <img src="./Officers/mahan.jpg"alt="Sigma Chi Logo">
-    </div>
-    <div class="col">
-      <img src="./Officers/lucas.jpg"alt="Sigma Chi Logo">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col">
-      <h3>Muhimbo Karangizi <br> <span class="off-title">Philanthropy Chair</span></h3>
-    </div>
-    <div class="col">
-      <h3>Mahan Carduny <br> <span class="off-title">Athletic Coordinator</span></h3>
-    </div>
-    <div class="col">
-      <h3>Lucas Fong <br> <span class="off-title">House Manager</span></h3>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col">
-      <img src="./Officers/cody.jpg"alt="Sigma Chi Logo">
-    </div>
-    <div class="col">
-      <img src="./Officers/jamie.jpg"alt="Sigma Chi Logo">
-    </div>
-    <div class="col">
-      <img src="./Officers/beau.jpg"alt="Sigma Chi Logo">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col">
-      <h3>Cody Bynes <br> <span class="off-title">Steward</span></h3>
-    </div>
-    <div class="col">
-      <h3>Jamie Cliff <br> <span class="off-title">Sweetheart</span></h3>
-    </div>
-    <div class="col">
-      <h3>Beau Zuercher <br> <span class="off-title">Sorority Relations Chairman</span></h3>
-    </div>
-  </div>
-</div>
-    <div class="main_content" id="Philanthropy">
-      <!--
-      Huntsman ofc
-      Current if applicable
-      -->
-    </div>
-    <div class="main_content" id="Rush">
-      <!--
-      Jordan Standard
-      Rush Schedule
-      Rush video would be flame
-      -->
-    </div>
-    <section class="nav-menu">
-      <section class="row-3">
-        <div class="label">
-          <h3>Huntsman Cancer Institute</h3>
-          <img src="huntsman.png">
-        </div>
-        <div class="content">
-          <p>info about huntsman info about huntsman info about huntsman
-            info about huntsman info about huntsman info about huntsman
-            info about huntsman info about huntsman info about huntsman
-            info about huntsman info about huntsman info about huntsman
-            info about huntsman info about huntsman info about huntsman </p>
-          <h5 class="link-button">Learn More</h5>
-        </div>
-      </section><!--
 
-      --><section class="row-3">
-        <div class="label">
-          <h3>Puppy Love</h3>
-          <img src="letters.png">
+    <nav class="navbar navbar-expand-md bg-light navbar-light sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="images/navbars/letters.png" alt="letters"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+              href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              About</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="about.html">History</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Our Chapter</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Brotherhood</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Philanthropy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Officers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Current Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Rush</a>
+            </li>
+          </ul>
         </div>
-        <div class="content">
-          <p>Got off to a ruff start this Winter quarter? Stressing out over that last minute
-          Lab(rador) report? Looking for a study break during midterm hell?
+      </div>
+    </nav>
 
-          If the answer to any of those questions was yes, you should come out to the
-          Sigma Chi house (400 Parkway Circle 11-3) for a day filled
-          with everyone’s favorite four-legged friend: puppies!
+    <!--
+    <div id="repeated-nav">
 
-          <br><br>All proceeds will be donated to Hearts for Paws, a non-profit rescue organization
-          that helps save dogs throughout Yolo County from poor conditions and near
-          euthanasia circumstances.</p>
-          <h5 class="link-button">Learn More</h5>
+    </div>
+
+    <script>
+      $(function(){
+        $("#repeated-nav").load("nav.html");
+      });
+    </script>
+    -->
+
+    <!-- Slideshow -->
+    <!-- Need to crop images manually -->
+    <div id="main-carousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#main-carousel" data-slide-to="1"></li>
+        <li data-target="#main-carousel" data-slide-to="2"></li>
+        <li data-target="#main-carousel" data-slide-to="3"></li>
+        <li data-target="#main-carousel" data-slide-to="4"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="images/backgrounds/background1-final.JPG" alt="Sigma Chi">
+          <!--
+          <div class="carousel-caption">
+            <h1>Sigma Chi</h1>
+            <h3>Theta Omicron</h3>
+          </div>
+        -->
         </div>
-      </section><!--
-
-      --><section class="row-3">
-        <div class="label">
-          <h3>Sigma Chi</h3>
-          <img src="SigmaChi.jpg">
+        <div class="carousel-item">
+          <img class="d-block w-100" src="images/backgrounds/background2.JPG" alt="Sigma Chi">
         </div>
-        <div class="content">
-          <p>Learn more about the history of Sigma Chi-- its upbringing, founders, and mission--
-            and what the fraternity hopes to accomplish on a national level.
+        <div class="carousel-item">
+          <img class="d-block w-100" src="images/backgrounds/background3.JPG" alt="Sigma Chi">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="images/backgrounds/background4.JPG" alt="Sigma Chi">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="images/backgrounds/background5.JPG" alt="Sigma Chi">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#main-carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#main-carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <!-- Top news section -->
+    <div class="col-12 text-center bg-light">
+      <h1 class="display-4">Navigation</h1>
+    </div>
+    </div>
+    <div class="container-fluid text-center bg-light">
+      <div class="row padding">
+        <div class="col-xs-12 col-md-6 col-lg-4">
+          <img class="img-thumbnail" src="images/navbars/huntsman.png" width="300px" height="auto" alt="Huntsman Foundation">
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-8">
+          <p>
+            Decription and updates about Huntsman
           </p>
-          <h5 class="link-button">Learn More</h5>
+          <a href="#" class="btn btn-primary">Learn More</a>
+          <a href="#" class="btn btn-primary">Donate</a>
         </div>
-      </section>
-    </section>
-    <section class="Contact">
-      <h1>Contact Us</h1>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3120.5358748719473!2d-121.76344228513447!3d38.54446567527591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808529aa4ee76c5b%3A0x4421b3d1327e9072!2s400%20Parkway%20Cir%2C%20Davis%2C%20CA%2095616!5e0!3m2!1sen!2sus!4v1567377044118!5m2!1sen!2sus"
-      width="500" height="375" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-      <div class="contact-container">
-        <h3>Email:</h3>
-        <h5>htrobey@ucdavis.edu</h5>
-        <h3>Phone:</h3>
-        <h5>650-353-8048</h5>
       </div>
-    </section>
+      <hr>
+      <div class="row padding">
+        <div class="col-xs-12 col-md-6 col-lg-4">
+          <img class="img-thumbnail" src="images/navbars/puppy-main.JPG" width="300px" height="auto" alt="Huntsman Foundation">
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-8">
+          <p>
+            Possible upcoming Philanthropy
+          </p>
+          <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+      <hr>
+      <div class="row padding">
+        <div class="col-xs-12 col-md-6 col-lg-4">
+          <img class="img-thumbnail" src="images/navbars/sigmachi.jpg" width="300px" height="auto" alt="Huntsman Foundation">
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-8">
+          <p>
+            Sigma Chi National Description
+          </p>
+          <a  target="_blank" href="https://sigmachi.org/" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+    </div>
+    <!-- Fixed background -->
+    <figure>
+      <div class="fixed-wrap">
+        <div id="fixed"></div>
+    </figure>
+    <!-- Contact us -->
+    <div class="fluid-container contact-us">
+      <div class="col-12 text-center">
+        <h1 class="display-4">Contact Us</h1>
+      </div>
+      <div class="row text-center">
+        <div class="col-xs-12 col-lg-5">
+          <h3>Email:</h3>
+          <h4 class="padding-bottom">htrobey@ucdavis.edu</h4>
+          <h3>Phone:</h3>
+          <h4 class="padding-bottom">925-683-8215</h4>
+        </div>
+        <div class="col-xs-12 col-lg-7">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3120.5360569269405!2d-121.76344228500272!3d38.544461479626655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808529aa4ee76c5b%3A0x4421b3d1327e9072!2s400%20Parkway%20Cir%2C%20Davis%2C%20CA%2095616!5e0!3m2!1sen!2sus!4v1569710702331!5m2!1sen!2sus"
+          width="470" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+      </div>
+    </div>
 
-    <!--
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Javascript
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    -->
-
-    <script>
-      var slideIndex = 0;
-      setTimeout(del, 3000);
-      function del() {
-        var temp = document.getElementsByClassName("SlideshowStart");
-        for (i = 0; i < temp.length; i++) {
-          temp[i].style.display = "none";
-        }
-      }
-      carousel();
-      function carousel() {
-        var i;
-        var x = document.getElementsByClassName("Slideshow");
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > x.length) {slideIndex = 1}
-        x[slideIndex-1].style.display = "block";
-        setTimeout(carousel, 3000);
-      }
-    </script>
-
-    <script>
-      document.getElementById("defaultOpen").click();
-      var curOpenTab;
-      function openTab(tabName,elmnt,color) {
-        var i, main_content, menu, nav_menu;
-        main_content = document.getElementsByClassName("main_content");
-        for (i = 0; i < main_content.length; i++) {
-          main_content[i].style.display = "none";
-        }
-
-        nav_menu = document.getElementsByClassName("nav-menu");
-        if (tabName == "Home") {
-          for (i = 0; i < nav_menu.length; i++) {
-            nav_menu[i].style.display = "block";
-          }
-        } else {
-          for (i = 0; i < nav_menu.length; i++) {
-            nav_menu[i].style.display = "none";
-          }
-        }
-
-        menu = document.getElementsByClassName("menu");
-        for (i = 0; i < menu.length; i++) {
-          menu[i].style.backgroundColor = "";
-        }
-        document.getElementById(tabName).style.display = "block";
-        elmnt.style.backgroundColor = color;
-        if (curOpenTab !== tabName) {
-          scroll(0, 0);
-        }
-        curOpenTab = tabName;
-      }
-    </script>
   </body>
 </html>
