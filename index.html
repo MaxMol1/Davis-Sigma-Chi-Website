@@ -153,7 +153,9 @@
       $("#repeated-nav").load("./handlebars/nav.html");      
     });
     $(window).scroll(function(){
-      $("#fixed").css("top", Math.min(0, 1792 - $(this).scrollTop()));
+      var y += (element.offsetTop - element.scrollTop + element.clientTop);
+        element = element.offsetParent;
+      $("#fixed").css("top", Math.min(0, y - $(this).scrollTop()));
     });
   </script>
 </html>
