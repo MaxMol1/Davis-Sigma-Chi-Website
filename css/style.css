@@ -40,8 +40,7 @@ p {
   padding: 0.4em;
   background: #0C3C60;
   background: #333;
-}
-
+} 
 
 .navbar:hover {
   color: #222;
@@ -60,28 +59,24 @@ p {
   opacity: .85;
 }
 
-/* This is so fucked */
+.carousel-inner .carousel-item {
+  margin: 0px 0px;
+  min-width: 100vh;
+}
+
 #main-carousel img {  
   height: 100vh;
   max-height: 100vh;
-}
-
-@media (max-width: 992px) {
-  #main-carousel img {
-    width: auto;
-    height: 100vh;
-    max-height: 100vh;
-  }
+  object-fit: cover;
 }
 
 @media (max-width: 768px) {
-  #main-carousel img {
-    width: auto;
-    height: 50vh;
+  #main-carousel img {    
+    margin-top: 73px;
     max-height: 50vh;
+    transform: translate(-8%);
   }
 }
-/* Still fucked */
 
 .news-section {
   padding: 25px 125px 25px 125px;
@@ -176,16 +171,17 @@ p {
 }
 
 .contact-us button {
-  margin-right: 15px; 
+  margin-right: 25px; 
+  /* Temporary fix */
   margin-bottom: 15%; 
+  padding: 12px;
 }
 
-/* This CSS needs to be glanced over
-   Start of About styling */
+/* About section style 
+   Big transition boys */
 
-#history {
-  /* Do not know why I need this but I do */
-  margin: 0px 0px;
+#history {  
+  margin: 40px 0px 0px 0px;
   height: 94%;
   width: 100%;
   background-image: url('../img/about/sigmachi-flag.jpg');
@@ -204,12 +200,26 @@ p {
 #history p {
   padding: 30px 10% 0px 10%;
   font-size: 22px;
+  color: #555;
 }
 
 #history footer {
   font-size: 18px;
   text-align: right;
   padding-right: 150px;
+}
+
+.founding {
+  margin: 0px 100px;
+  display: flex;
+  align-items: center;
+}
+
+/* Style for Our Chapter */
+.chapter {
+  padding: 0px 100px 100px 100px;
+  display: flex;
+  align-items: center;
 }
 
 /* Different image for the parallax */
@@ -233,7 +243,7 @@ p {
 }
 
 #footer {
-  display: inline-block;
+  display: block;
   height: 170px;
   width: 100%;
   background-color: #333;  
