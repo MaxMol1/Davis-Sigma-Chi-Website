@@ -152,9 +152,20 @@
     $(function() {
       $("#repeated-nav").load("./handlebars/nav.html");      
     });
-    $(window).scroll(function(){
-      var y += (element.offsetTop - element.scrollTop + element.clientTop);
+
+    function getPosition(element) {      
+      var yPosition = 0;
+      while(element) {
+        yPosition += (element.offsetTop - element.scrollTop + element.clientTop);
         element = element.offsetParent;
+      }
+      // Width of navbar is 73px
+      return yPosition - 73;
+    } 
+
+    $(window).scroll(function() {
+      var element = document.querySelectorAll('.parallax')[0];
+      var y = getPosition(element)
       $("#fixed").css("top", Math.min(0, y - $(this).scrollTop()));
     });
   </script>
