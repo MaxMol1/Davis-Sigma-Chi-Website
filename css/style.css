@@ -250,6 +250,10 @@ p {
   margin: 0 0;
 }
 
+.officers {
+  margin-top: 73px;
+}
+
 /*---Media Queries --*/
 @media (max-width: 992px) {
 
