@@ -9,56 +9,14 @@
 	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-    <link href="SC_Style.css" type="text/css" rel="stylesheet">
+    <link href="./css/style.css" type="text/css" rel="stylesheet">
   </head>
   <body>
-    <nav class="navbar navbar-expand-md bg-light navbar-light sticky-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="images/navbars/letters.png" alt="letters"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse"
-        data-target="#navbarResponsive">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-toggle="dropdown"
-              href="#" role="button" aria-haspopup="true" aria-expanded="false">
-              About</a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="about.html">History</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Our Chapter</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Brotherhood</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Philanthropy</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Officers</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Current Events</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Rush</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <!-- Navigation Bar -->
+    <div id="repeated-nav"></div>
 
-    <!--
-    That should eventually be deleted
-    -->
-
-    <!-- Quote + Background -->
-    <div id="history" class="fluid-container row  align-items-center">
+    <!-- Background & Quote -->
+    <div id="history" class="row  align-items-center">
       <div class="col-12 text-center">
         <h1 class="display-2">History</h1>
         <p>One, and the main, aim and object of Sigma Chi has been, and is, to develop
@@ -70,10 +28,9 @@
     </div>
 
     <!-- Founding -->
-
     <div class="fluid-container row align-items-center padding-top section-cont">
       <div class="col-sm-12 col-md-5 col-lg-7">
-        <h1 class="display-4 padding-bottom-small">Founding</h1>
+        <h1 class="display-4 text-center padding-bottom">Founding</h1>
         <p>
           Sigma Chi is a brotherhood with roots in friendship, equality and education
            as part of their overall responsibilities to the broader communities in
@@ -87,11 +44,7 @@
            Sigma Chi is comprised of four operational entities: the Sigma Chi
            Fraternity, the Sigma Chi Foundation, the Risk Management Foundation and
            Constantine Capital Inc.
-           <br><br>
-           The fundamental purpose of the Sigma Chi Fraternity is the cultivation,
-           maintenance and accomplishment of the ideals of friendship, justice and
-           learning within their membership
-           <br><br>
+           <br><br>    
            Sigma Chi Fraternity best serves its purpose by developing, implementing
            and monitoring programs that foster leadership, build character and promote
            positive relationship skills which, in turn, enable our members to become
@@ -104,20 +57,19 @@
         </p>
       </div>
       <div class="col-sm-12 col-md-7 col-lg-5">
-        <img src="images/about/runkle.jpg" alt="Huntsman Foundation">
+        <img src="./img/about/Runkle.jpg" alt="Huntsman Foundation">
       </div>
     </div>
 
     <!-- Our Chapter -->
-
     <hr>
     <div id="our-chapter" class="col-12 text-center">
-      <h1 class="display-4">Our Chapter</h1>
+      <h1 class="display-4 padding-bottom">Our Chapter</h1>
     </div>
     <div class="row align-items-center section-cont padding-bottom">
       <div class="fluid-container col-sm-12 col-md-7 col-lg-5">
-        <img src="images/about/back.JPG" width="400px" height="auto" alt="Huntsman Foundation">
-        <img src="images/about/our-chapter-2.JPG" width="400px" height="auto" alt="Huntsman Foundation">
+        <img src="./img/about/back.JPG" width="400px" height="auto" alt="Huntsman Foundation">
+        <img src="./img/about/our-chapter-2.JPG" width="400px" height="auto" alt="Huntsman Foundation">
       </div>
       <div class="fluid-container col-sm-12 col-md-5 col-lg-7">
         <p>
@@ -133,19 +85,14 @@
       </div>
     </div>
 
-    <!-- parallax -->
-
-    <figure>
-      <div class="fixed-wrap">
-        <div id="fixed2"></div>
-    </figure>
+    <!-- Parallax -->
+    <div class="parallax about-image"></div>      
 
     <!-- Brotherhood -->
-
     <div id="brotherhood" class="row fluid-container align-items-center section-cont">
       <div class="col-12">
         <h1 class="display-4 padding-bottom">Brotherhood</h1>
-        <img src="images/about/current-events-main.jpeg" width="100%" height="auto" alt="Huntsman Foundation">
+        <img src="./img/about/current-events-main.jpeg" width="100%" height="auto" alt="Huntsman Foundation">
       </div>
       <div class="col-12 text-center">
         <p>
@@ -158,8 +105,13 @@
         </p>
       </div>
     </div>
-
-    <div id="closer"></div>
-
+    <!-- This is the temporary footer for now -->
+    <div id="footer"></div>
   </body>
+
+  <script>
+    $(function(){
+      $("#repeated-nav").load("./handlebars/nav.html");
+    });
+  </script>
 </html>

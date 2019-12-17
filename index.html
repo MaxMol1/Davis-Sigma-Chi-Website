@@ -9,74 +9,13 @@
 	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-
-
-
-
-    <link href="SC_Style.css" type="text/css" rel="stylesheet">
+    <link href="./css/style.css" type="text/css" rel="stylesheet">
   </head>
   <body>
-    <!-- Navigation -->
-
-    <!--
-    Scroll down for ajax method
-    -->
-
-    <nav class="navbar navbar-expand-md bg-light navbar-light sticky-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="images/navbars/letters.png" alt="letters"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse"
-        data-target="#navbarResponsive">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-toggle="dropdown"
-              href="#" role="button" aria-haspopup="true" aria-expanded="false">
-              About</a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="about.html">History</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Our Chapter</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Brotherhood</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Philanthropy</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Officers</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Current Events</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Rush</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!--
-    <div id="repeated-nav">
-
-    </div>
-
-    <script>
-      $(function(){
-        $("#repeated-nav").load("nav.html");
-      });
-    </script>
-    -->
+    <!-- Navigation Bar -->
+    <div id="repeated-nav"></div>
 
     <!-- Slideshow -->
-    <!-- Need to crop images manually -->
     <div id="main-carousel" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
@@ -85,27 +24,22 @@
         <li data-target="#main-carousel" data-slide-to="3"></li>
         <li data-target="#main-carousel" data-slide-to="4"></li>
       </ol>
+      <!-- Automate adding images to the slideshow -->
       <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="d-block w-100" src="images/backgrounds/background1-final.JPG" alt="Sigma Chi">
-          <!--
-          <div class="carousel-caption">
-            <h1>Sigma Chi</h1>
-            <h3>Theta Omicron</h3>
-          </div>
-        -->
+        <div class="carousel-item active blue-overlay">
+          <img class="d-block w-100 opacity" src="./img/background/house.JPG" alt="Sigma Chi">          
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="images/backgrounds/background2.JPG" alt="Sigma Chi">
+          <img class="d-block w-100" src="./img/background/background2.JPG" alt="Sigma Chi">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="images/backgrounds/background3.JPG" alt="Sigma Chi">
+          <img class="d-block w-100" src="./img/background/background3.JPG" alt="Sigma Chi">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="images/backgrounds/background4.JPG" alt="Sigma Chi">
+          <img class="d-block w-100" src="./img/background/background4.JPG" alt="Sigma Chi">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="images/backgrounds/background5.JPG" alt="Sigma Chi">
+          <img class="d-block w-100" src="./img/background/background5.JPG" alt="Sigma Chi">
         </div>
       </div>
       <a class="carousel-control-prev" href="#main-carousel" role="button" data-slide="prev">
@@ -117,72 +51,109 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
-    <!-- Top news section -->
-    <div class="col-12 text-center bg-light">
-      <h1 class="display-4">Navigation</h1>
-    </div>
-    </div>
-    <div class="container-fluid text-center bg-light">
-      <div class="row padding">
+
+    <!-- News section -->
+    <div class="container-fluid news-section text-center">
+      <div class="row">
         <div class="col-xs-12 col-md-6 col-lg-4">
-          <img class="img-thumbnail" src="images/navbars/huntsman.png" width="300px" height="auto" alt="Huntsman Foundation">
-        </div>
-        <div class="col-xs-12 col-md-6 col-lg-8">
+          <div class="circular">
+            <img src="./img/navbar/puppy-main.JPG">
+          </div>
+          <h1>Puppy Love</h1>
           <p>
-            Decription and updates about Huntsman
+            Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id 
+            ligula porta felis euismod semper. Praesent commodo cursus magna, 
+            vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
           </p>
-          <a href="#" class="btn btn-primary">Learn More</a>
-          <a href="#" class="btn btn-primary">Donate</a>
+          <button type="button" class="btn btn-secondary">View Details</button>
         </div>
-      </div>
-      <hr>
-      <div class="row padding">
         <div class="col-xs-12 col-md-6 col-lg-4">
-          <img class="img-thumbnail" src="images/navbars/puppy-main.JPG" width="300px" height="auto" alt="Huntsman Foundation">
-        </div>
-        <div class="col-xs-12 col-md-6 col-lg-8">
+          <div class="circular">
+            <img src="./img/navbar/sigmachi.JPG">
+          </div>
+          <h1>SampleText</h1>
           <p>
-            Possible upcoming Philanthropy
+            Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id 
+            ligula porta felis euismod semper. Praesent commodo cursus magna, 
+            vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo. 
           </p>
-          <a href="#" class="btn btn-primary">Learn More</a>
+          <button type="button" class="btn btn-secondary">View Details</button>
         </div>
-      </div>
-      <hr>
-      <div class="row padding">
-        <div class="col-xs-12 col-md-6 col-lg-4">
-          <img class="img-thumbnail" src="images/navbars/sigmachi.jpg" width="300px" height="auto" alt="Huntsman Foundation">
-        </div>
-        <div class="col-xs-12 col-md-6 col-lg-8">
+        <div class="col-md-12 col-lg-4">
+          <div class="circular">
+            <img src="./img/navbar/sigmachi.JPG">
+          </div>
+          <h1>National</h1>
           <p>
-            Sigma Chi National Description
+            Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id 
+            ligula porta felis euismod semper. Praesent commodo cursus magna, 
+            vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
           </p>
-          <a  target="_blank" href="https://sigmachi.org/" class="btn btn-primary">Learn More</a>
+          <button type="button" class="btn btn-secondary">View Details</button>
         </div>
       </div>
     </div>
-    <!-- Fixed background -->
-    <figure>
-      <div class="fixed-wrap">
-        <div id="fixed"></div>
-    </figure>
-    <!-- Contact us -->
-    <div class="fluid-container contact-us">
-      <div class="col-12 text-center">
-        <h1 class="display-4">Contact Us</h1>
-      </div>
-      <div class="row text-center">
-        <div class="col-xs-12 col-lg-5">
-          <h3>Email:</h3>
-          <h4 class="padding-bottom">htrobey@ucdavis.edu</h4>
-          <h3>Phone:</h3>
-          <h4 class="padding-bottom">925-683-8215</h4>
+    
+    <hr>
+
+    <!-- Random ass section -->
+    <div class="attention-section">
+      <div class="row">
+        <div class="col-xs-12 col-md-7">
+          <h1>Theta Omicron Chapter. <span class="gray-text">Our mission.</span></h1>
+          <p>
+            The fundamental purpose of the Sigma Chi Fraternity is the cultivation,
+            maintenance and accomplishment of the ideals of friendship, justice and
+            learning within their membership. And downing hella brews dawh ahh hah hah
+          </p>
         </div>
-        <div class="col-xs-12 col-lg-7">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3120.5360569269405!2d-121.76344228500272!3d38.544461479626655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808529aa4ee76c5b%3A0x4421b3d1327e9072!2s400%20Parkway%20Cir%2C%20Davis%2C%20CA%2095616!5e0!3m2!1sen!2sus!4v1569710702331!5m2!1sen!2sus"
-          width="470" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        <div style="height: 400px; width: 400px; background-color: gray;" class="col-xs-12 col-md-5">
+          <!-- Insert image -->
+
         </div>
       </div>
     </div>
 
+    <!-- Parallax -->
+    <div class="parallax">
+      <div class="parallax-text text-center">
+        <div>
+          <p>Cancer Foundation</p>
+          <h1>Huntsman Institute</h1>    
+          <p>
+            Join the fight against cancer. Learn
+            more about what the Hunstman Institute of Cancer does as an organization.
+          </p>
+          <button type="button" class="btn btn-secondary" href="htrobey@ucdavis.edu">huntsman.org</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Us -->    
+    <div class="fluid-container contact-us">
+      <div class="row">
+        <div class="col-xs-12 col-lg-6 align-self-center">
+          <p class="">—Contact Us</p>
+          <h1>925-683-8215</h1>
+          <p class="">Recruitment Chair</p>      
+          <button type="button" class="btn btn-secondary" href="htrobey@ucdavis.edu">Email</button>
+          <button type="button" class="btn btn-secondary">Rush Schedule</button>
+        </div>      
+        <div class="col-xs-12 col-lg-6 text-center align-self-center">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3120.5360569269405!2d-121.76344228500272!3d38.544461479626655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808529aa4ee76c5b%3A0x4421b3d1327e9072!2s400%20Parkway%20Cir%2C%20Davis%2C%20CA%2095616!5e0!3m2!1sen!2sus!4v1569710702331!5m2!1sen!2sus"
+          width="470" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>        
+      </div>
+    </div>
   </body>
+  
+  <script>
+    // Script to load repeated html
+    $(function() {
+      $("#repeated-nav").load("./handlebars/nav.html");      
+    });
+    $(window).scroll(function(){
+      $("#fixed").css("top", Math.min(0, 1792 - $(this).scrollTop()));
+    });
+  </script>
 </html>
