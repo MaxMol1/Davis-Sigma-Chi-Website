@@ -27,7 +27,7 @@
       <!-- Automate adding images to the slideshow -->
       <div class="carousel-inner">
         <div class="carousel-item active blue-overlay">
-          <img class="d-block w-100 opacity" src="./img/background/house.JPG" alt="Sigma Chi">          
+          <img class="d-block w-100 opacity" src="./img/background/house.JPG" alt="Sigma Chi">
         </div>
         <div class="carousel-item">
           <img class="d-block w-100" src="./img/background/background2.JPG" alt="Sigma Chi">
@@ -61,8 +61,8 @@
           </div>
           <h1>Puppy Love</h1>
           <p>
-            Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id 
-            ligula porta felis euismod semper. Praesent commodo cursus magna, 
+            Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id
+            ligula porta felis euismod semper. Praesent commodo cursus magna,
             vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
           </p>
           <button type="button" class="btn btn-secondary">View Details</button>
@@ -73,9 +73,9 @@
           </div>
           <h1>SampleText</h1>
           <p>
-            Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id 
-            ligula porta felis euismod semper. Praesent commodo cursus magna, 
-            vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo. 
+            Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id
+            ligula porta felis euismod semper. Praesent commodo cursus magna,
+            vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
           </p>
           <button type="button" class="btn btn-secondary">View Details</button>
         </div>
@@ -85,15 +85,15 @@
           </div>
           <h1>Sigma Chi</h1>
           <p>
-            Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id 
-            ligula porta felis euismod semper. Praesent commodo cursus magna, 
+            Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id
+            ligula porta felis euismod semper. Praesent commodo cursus magna,
             vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
           </p>
           <button type="button" class="btn btn-secondary">View Details</button>
         </div>
       </div>
     </div>
-    
+
     <hr>
 
     <!-- Random ass section -->
@@ -104,7 +104,7 @@
           <p>
             The fundamental purpose of the Sigma Chi Fraternity is the cultivation,
             maintenance and accomplishment of the ideals of friendship, justice and
-            learning within their membership. And downing hella brews dawh ahh hah hah
+            learning within their membership.
           </p>
         </div>
         <div style="height: 400px; width: 400px; background-color: gray;" class="col-xs-12 col-md-5">
@@ -119,7 +119,7 @@
       <div class="parallax-text text-center">
         <div>
           <p>Cancer Foundation</p>
-          <h1>Huntsman Institute</h1>    
+          <h1>Huntsman Institute</h1>
           <p>
             Join the fight against cancer. Learn
             more about what the Hunstman Institute of Cancer does as an organization.
@@ -129,34 +129,34 @@
       </div>
     </div>
 
-    <!-- Contact Us -->    
+    <!-- Contact Us -->
     <div class="fluid-container contact-us">
       <div class="row">
         <div class="col-xs-12 col-lg-6 align-self-center">
           <p class=""><i class="fa fa-user"></i> Contact Us</p>
           <h1>925-683-8215</h1>
-          <p class="">Recruitment Chair</p>      
+          <p class="">Recruitment Chair</p>
           <button type="button" class="btn btn-secondary" href="htrobey@ucdavis.edu">Email</button>
           <button type="button" class="btn btn-secondary">Rush Schedule</button>
-        </div>      
+        </div>
         <div class="col-xs-12 col-lg-6 text-center align-self-center">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3120.5360569269405!2d-121.76344228500272!3d38.544461479626655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808529aa4ee76c5b%3A0x4421b3d1327e9072!2s400%20Parkway%20Cir%2C%20Davis%2C%20CA%2095616!5e0!3m2!1sen!2sus!4v1569710702331!5m2!1sen!2sus"
           width="470" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-        </div>        
+        </div>
       </div>
     </div>
 
     <!-- This is the temporary footer for now -->
     <div id="footer"></div>
   </body>
-  
+
   <script>
     // Script to load repeated html
     $(function() {
-      $("#repeated-nav").load("./handlebars/nav.html");      
+      $("#repeated-nav").load("./handlebars/nav.html");
     });
 
-    function getPosition(element) {      
+    function getPosition(element) {
       var yPosition = 0;
       while(element) {
         yPosition += (element.offsetTop - element.scrollTop + element.clientTop);
@@ -164,7 +164,7 @@
       }
       // Width of navbar is 73px
       return yPosition - 73;
-    } 
+    }
 
     $(window).scroll(function() {
       var element = document.querySelectorAll('.parallax')[0];

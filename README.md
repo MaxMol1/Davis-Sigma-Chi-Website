@@ -9,8 +9,6 @@ The to-be official Theta Omicron chapter of Sigma Chi website.
 ## To-Do
 
 * Optimize image loading - Slideshow dimensions do not match up
-* Fill in navigation area content on main page
-* Update Carving for a Cause instead of Puppy Love
 * Link the rest of the About section navbar
 * Optimize content/images in the about section
 * Create Philanthropy section
