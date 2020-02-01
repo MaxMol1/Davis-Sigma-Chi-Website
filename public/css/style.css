@@ -6,15 +6,18 @@
   padding: 0px 0px;
 }
 
+.fluid-container {
+  margin: 0 0;
+}
+
 .row {
   width: 100%;
 }
 
-/* TODO: height should not be 100%..? */
 html, body {
-  width: 100%;
+  margin: 0px 30px;  
+  width: 100% - 60px;
   height: 100%;
-  /* Pick different font..? */
   font-family: 'Lato', sans-serif;
 }
 
@@ -35,39 +38,37 @@ p {
 
 /* Style navbar better */
 .navbar {  
+  margin-left: -60px;
   width: 100%;
   position: fixed;
   padding: 0.4em;
-  background: #0C3C60;
-  background: #333;
+  background: #01a4e1;
 } 
-
-.navbar:hover {
-  color: #222;
-}
 
 .navbar-nav li {
   font-size: 16px;
   padding: 0em 0.8em;
 }
 
+.nav-item a {
+  color: #e8c902;
+}
+
+.nav-item a:hover {
+  color: #555;
+}
+
 .blue-overlay {  
-  background-color: #0C3C60;  
+  background-color: #0C3C60;
 }
 
 .opacity {
   opacity: .85;
 }
 
-.carousel-inner .carousel-item {
-  margin: 0px 0px;
-  min-width: 100vh;
-}
-
-#main-carousel img {  
-  height: 100vh;
-  max-height: 100vh;
-  object-fit: cover;
+.landing_img {
+  margin-top: 133px;
+  height: 100vh - 163px;
 }
 
 @media (max-width: 768px) {
@@ -115,6 +116,7 @@ p {
 }
 
 .parallax {
+  margin: 0px -60px;
   background-image: url('../img/huntsman_institute.jpg');  
   min-height: 130%; 
   background-attachment: fixed;
@@ -148,6 +150,7 @@ p {
 }
 
 .contact-us {
+  margin: 0px -60px;
   background: #d1e0eb;
   background: linear-gradient(105deg, #d1e0eb 50%, white 50%);
   min-height: 100%;
@@ -181,9 +184,12 @@ p {
    Big transition boys */
 
 #history {  
-  margin: 40px 0px 0px 0px;
-  height: 94%;
-  width: 100%;
+  margin-top: 123px;
+  margin-bottom: 30px;
+  height: 80%;
+  /* margin: 73px 0px 0px 0px;
+  height: 85%;
+  width: 100%; */
   background-image: url('../img/about/sigmachi-flag.jpg');
   filter: brightness(85%);
 }
@@ -210,7 +216,7 @@ p {
 }
 
 .founding {
-  margin: 0px 100px;
+  margin: 0px 0px;
   display: flex;
   align-items: center;
 }
@@ -244,10 +250,9 @@ p {
 
 #footer {
   display: block;
+  margin: 0px -60px;
   height: 170px;
-  width: 100%;
-  background-color: #333;  
-  margin: 0 0;
+  background-color: #333;    
 }
 
 .officers {

@@ -32,6 +32,13 @@ app.get('/about', (req, res) => {
 })
 
 // Render officers page
+app.get('/philanthropy', (req, res) => {
+    res.render('philanthropy', {
+        title: 'Philanthropy',
+    })
+})
+
+// Render officers page
 app.get('/officers', (req, res) => {
     res.render('officers', {
         title: 'Officers',
