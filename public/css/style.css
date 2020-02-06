@@ -15,10 +15,10 @@
 }
 
 html, body {
-  margin: 0px 30px;  
-  width: 100% - 60px;
-  height: 100%;
   font-family: 'Lato', sans-serif;
+  margin: 0px 30px;
+  height: 100%;
+  width: 100% - 60px;  
 }
 
 /* Global defaults */
@@ -52,6 +52,9 @@ p {
 
 .nav-item a {
   color: #e8c902;
+  color: #FFF;
+  font-weight: 300;
+  text-transform: uppercase;  
 }
 
 .nav-item a:hover {
