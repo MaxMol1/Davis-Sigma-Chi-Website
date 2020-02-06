@@ -267,6 +267,14 @@
   color: #fff;
 }
 
+.philo-section {
+  padding: 0 0 10rem 0;
+}
+
+.philo-section img {
+  margin-top: 1rem;
+}
+
 body {
   font-family: 'Nunito';
   letter-spacing: 0.0625em;
