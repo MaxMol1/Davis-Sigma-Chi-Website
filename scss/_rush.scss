@@ -1,8 +1,12 @@
 .rush-section {
-  padding: 10rem 0;
+  padding: 5rem 0 21rem 0;
   background: linear-gradient(to bottom, #{fade-out($black, .9)} 0%,#{fade-out($black, .5)} 75%,$black 100%), url('http://getwallpapers.com/wallpaper/full/4/7/6/614535.jpg');
-  background-position: center;
+  // background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+  h4 {
+    margin-top: 8rem;
+    margin-bottom: -8rem;
+  }
 }

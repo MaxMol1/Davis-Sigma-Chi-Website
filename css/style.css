@@ -204,12 +204,16 @@
 }
 
 .rush-section {
-  padding: 10rem 0;
+  padding: 5rem 0 21rem 0;
   background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("http://getwallpapers.com/wallpaper/full/4/7/6/614535.jpg");
-  background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+}
+
+.rush-section h4 {
+  margin-top: 8rem;
+  margin-bottom: -8rem;
 }
 
 .contact-section {
