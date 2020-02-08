@@ -137,7 +137,7 @@
 
 .btn {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
-  padding: 1.25rem 2rem;
+  padding: 0.6rem 1.75rem;
   font-family: 'Varela Round';
   font-size: 80%;
   text-transform: uppercase;
@@ -172,8 +172,15 @@
   margin-bottom: 5rem;
 }
 
+@media (max-width: 768px) {
+  .home-section {
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+  }
+}
+
 .sections {
-  padding: 10rem 0;
+  padding: 5rem 0;
 }
 
 .sections .featured-text {
@@ -200,6 +207,13 @@
     border-color: #01a4e1;
     border-width: .25rem;
     width: 30%;
+  }
+}
+
+@media (max-width: 768px) {
+  .sections {
+    padding-top: 4rem;
+    padding-bottom: 1rem;
   }
 }
 
@@ -261,11 +275,17 @@
 }
 
 .philanthropy-section {
-  padding: 0 0 10rem 0;
+  padding: 0 0 5rem 0;
 }
 
 .philanthropy-section img {
   margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .philanthropy-section {
+    padding-bottom: 0rem;
+  }
 }
 
 body {

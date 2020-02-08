@@ -5,4 +5,8 @@
   p {
     margin-bottom: 5rem;
   }
+  @media(max-width: 768px) {
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+  }
 }
