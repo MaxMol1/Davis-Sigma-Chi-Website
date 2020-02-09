@@ -39,4 +39,21 @@
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
+  // Shows the rest of the officers
+
 })(jQuery); // End of use strict
+
+function showOfficers() {
+  var offBut = document.getElementById("officersButton");
+  var noShow = document.getElementsByClassName("not-shown");
+
+  if (offBut.innerHTML == "Less") { 
+    offBut.innerHTML = "More";
+    for (i = 0; i < noShow.length; i++)
+      noShow[i].style.display = "none";
+  } else {
+    offBut.innerHTML = "Less";
+    for (i = 0; i < noShow.length; i++)
+      noShow[i].style.display = "flex";
+  }
+}

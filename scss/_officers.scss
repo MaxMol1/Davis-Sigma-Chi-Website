@@ -1,0 +1,12 @@
+.officers-section {
+    padding: 5rem 0 0 0;
+    img {
+      margin-top: 1rem;
+    }
+    @media(max-width: 768px) {    
+      padding-bottom: 0rem;
+    }
+    .not-shown {
+        display: none;
+    }
+  }
