@@ -46,6 +46,7 @@
 function showOfficers() {
   var offBut = document.getElementById("officersButton");
   var noShow = document.getElementsByClassName("not-shown");
+  var officer = document.getElementById("officers");
 
   if (offBut.innerHTML == "Less") { 
     offBut.innerHTML = "More";
@@ -56,4 +57,5 @@ function showOfficers() {
     for (i = 0; i < noShow.length; i++)
       noShow[i].style.display = "flex";
   }
+  officer.scrollIntoView({behavior: "smooth"})
 }

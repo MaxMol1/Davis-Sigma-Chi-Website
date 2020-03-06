@@ -33,4 +33,13 @@
       }
     }
   }
+  @media(max-width: 768px) {
+    .card {
+      margin: 0 auto;
+      width: 65%;
+    }
+    .social {
+      margin-top: 1rem;
+    }
+  }
 }

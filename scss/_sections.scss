@@ -21,6 +21,10 @@
       }
     }
   }
+  a, a:visited {
+    text-decoration: none;
+    color: white;
+  }
   @media(max-width: 768px) {
     padding-top: 3rem;
     padding-bottom: 0rem;

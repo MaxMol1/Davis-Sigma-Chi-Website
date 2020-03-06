@@ -70,20 +70,41 @@
   color: #fff;
 }
 
+@media (max-width: 768px) {
+  .contact-section .card {
+    margin: 0 auto;
+    width: 65%;
+  }
+  .contact-section .social {
+    margin-top: 1rem;
+  }
+}
+
 .home-section {
   padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-bottom: 7rem;
   background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
 }
 
-.home-section p {
-  margin-bottom: 5rem;
+.home-section a {
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  text-decoration: none;
+  color: white;
+}
+
+.home-section a:visited {
+  text-decoration: none;
+  color: white;
 }
 
 @media (max-width: 768px) {
   .home-section {
     padding-top: 3rem;
     padding-bottom: 4rem;
+  }
+  .home-section .centeredbtn {
+    text-align: center;
   }
 }
 
@@ -224,6 +245,11 @@
 
 .officers-section img {
   margin-top: 1rem;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
 }
 
 @media (max-width: 768px) {
@@ -252,7 +278,7 @@
 
 .rush-section {
   padding: 5rem 0 21rem 0;
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("http://getwallpapers.com/wallpaper/full/4/7/6/614535.jpg");
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
@@ -294,6 +320,11 @@
     border-width: .25rem;
     width: 30%;
   }
+}
+
+.sections a, .sections a:visited {
+  text-decoration: none;
+  color: white;
 }
 
 @media (max-width: 768px) {
