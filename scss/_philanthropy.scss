@@ -5,5 +5,8 @@
   }
   @media(max-width: 768px) {    
     padding-bottom: 0rem;
+    .full-size {
+      height: 100vh;
+    }
   }
 }

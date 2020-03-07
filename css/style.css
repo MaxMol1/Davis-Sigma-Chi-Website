@@ -255,6 +255,12 @@
 @media (max-width: 768px) {
   .officers-section {
     padding-bottom: 0rem;
+    margin-bottom: 0rem;
+  }
+  .officers-section img {
+    margin-top: 0rem;
+    width: 175px;
+    height: 175px;
   }
 }
 
@@ -273,6 +279,9 @@
 @media (max-width: 768px) {
   .philanthropy-section {
     padding-bottom: 0rem;
+  }
+  .philanthropy-section .full-size {
+    height: 100vh;
   }
 }
 
