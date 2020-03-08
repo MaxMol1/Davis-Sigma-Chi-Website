@@ -102,6 +102,8 @@
   .home-section {
     padding-top: 3rem;
     padding-bottom: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
   .home-section .centeredbtn {
     text-align: center;
