@@ -39,8 +39,6 @@
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
-  // Shows the rest of the officers
-
 })(jQuery); // End of use strict
 
 function showOfficers() {
