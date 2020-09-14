@@ -1,5 +1,8 @@
 (function($) {
   "use strict"; // Start of use strict
+  jQuery.htmlPrefilter = function( html ) {
+    return html;
+  };
 
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
