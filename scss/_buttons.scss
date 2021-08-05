@@ -16,4 +16,7 @@
   &:active {
     background-color: darken($primary, 15%) !important;
   }
+  &:visited {
+    color: $white;
+  }
 }

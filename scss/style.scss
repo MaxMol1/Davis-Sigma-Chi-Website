@@ -7,7 +7,6 @@
 @import 'officers.scss';
 @import 'philanthropy.scss';
 @import 'rush.scss';
-@import 'sections.scss';
 
 body {
   font-family: 'Nunito';
@@ -20,6 +19,10 @@ a {
   &:hover {
     text-decoration: none;
     color: darken($primary, 20%);
+  }
+  &:visited {
+    text-decoration: none;
+    color: $primary;
   }
 }
 
@@ -35,6 +38,35 @@ a {
   color: $primary !important;
 }
 
-footer {
+.section-padding {
   padding: 5rem 0;
+}
+
+.no-section-padding-t {
+  padding-top: 0;
+}
+
+.no-section-padding-b {
+  padding-bottom: 0;
+}
+
+.featured-text {
+  padding: 2rem;
+  @media (min-width: 992px) {
+    padding: 0 0 0 2rem;
+    border-left: 0.5rem solid $primary;
+  }
+}
+
+.project-text {
+  padding: 3rem;
+  font-size: 90%;
+  @media (min-width: 992px) {
+    padding: 5rem;
+    hr {
+      border-color: $primary;
+      border-width: .25rem;
+      width: 30%;
+    }
+  }
 }

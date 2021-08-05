@@ -1,5 +1,6 @@
 (function($) {
-  "use strict"; // Start of use strict
+  // Start of use strict
+  "use strict";
   jQuery.htmlPrefilter = function( html ) {
     return html;
   };
@@ -29,21 +30,21 @@
     offset: 100
   });
 
-  // Collapse Navbar
+  // Control if navbar is transparent of full
   var navbarCollapse = function() {
     if ($("#navigation").offset().top > 100) {
-      $("#navigation").addClass("navbar-shrink");
+      $("#navigation").addClass("navbar-full");
     } else {
-      $("#navigation").removeClass("navbar-shrink");
+      $("#navigation").removeClass("navbar-full");
     }
   };
-  // Collapse now if page is not at top
   navbarCollapse();
-  // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
-})(jQuery); // End of use strict
+})(jQuery);
+// End of use strict
 
+// Show full officer list if "more" button is clicked
 function showOfficers() {
   var offBut = document.getElementById("officersButton");
   var noShow = document.getElementsByClassName("not-shown");
@@ -61,6 +62,7 @@ function showOfficers() {
   officer.scrollIntoView({behavior: "smooth"})
 }
 
+// Submission script for rush form
 var scriptURL = 'https://script.google.com/macros/s/AKfycbwpUBWqfIUdkgnLEGIdokQI1tnKpAaPjJQIZ5Df23HDwUrZLGyc/exec'
 var form = document.forms['submit-to-google-sheet']
 
