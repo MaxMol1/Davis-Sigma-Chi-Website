@@ -63,7 +63,7 @@ function showOfficers() {
 }
 
 // Submission script for rush form
-var scriptURL = 'https://script.google.com/macros/s/AKfycbwpUBWqfIUdkgnLEGIdokQI1tnKpAaPjJQIZ5Df23HDwUrZLGyc/exec'
+var scriptURL = 'https://script.google.com/macros/s/AKfycbzAKO749wk5Lg4jGyc0vWK7w9Nusjs0D89n0Tu1qUJIoe00j4mCCDH3SLlviPbMhbBK/exec'
 var form = document.forms['submit-to-google-sheet']
 
 form.addEventListener('submit', function(e) {
